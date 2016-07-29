@@ -58,7 +58,7 @@ var server = http.createServer(
 				});
 		}
 		else{
-			//	Load module and call function
+			//	Default module and function - if not defined (root / home)
 			if (url.length == 0 || url[0] == '')
 				url = ['index', 'index'];
 			else if (url.length == 1)
